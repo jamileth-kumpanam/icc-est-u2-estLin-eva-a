@@ -16,8 +16,10 @@ public class LogicaClasificacion {
      */
     public Queue<String> invertirColaNombres(Queue<String> cola) {
 
-        return new LinkedList<>(Arrays.asList()); // Simulación de resultado
-    }
+        LinkedList<Integer> colas = new LinkedList<>();
+        if(cola.isEmpty()){
+
+        }
 
     /**
      * Verifica si la palabra formada por los elementos de una cola es un
@@ -32,6 +34,15 @@ public class LogicaClasificacion {
      * @return true si forman un palíndromo, false si no
      */
     public boolean verificarPalindromoCola(Queue<String> cola) {
+
+        Stack<String> letras = new Stack<>();
+        for (String c : cola.toCharArray()){
+            cola.push(c);
+        } 
+
+        StringBuilder invertir = new StringBuilder();
+        
+
 
         return false;
     }
